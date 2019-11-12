@@ -1,0 +1,501 @@
+{
+  "$id": "rmic_schema.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "allOf": [
+    {
+      "$ref": "/dcic/signature-commons-schema/v5/core/meta.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "project_id": {
+          "description": "Project ID",
+          "type": "string"
+        },
+        "project_title": {
+          "description": "Project title",
+          "type": "string"
+        },
+        "project_description": {
+          "description": "Project description",
+          "type": "string"
+        },
+        "project_keywords": {
+          "description": "Keywords",
+          "type": "string"
+        },
+        "pi_name": {
+          "description": "Name",
+          "type": "string"
+        },
+        "pi_affiliation": {
+          "description": "Affiliation",
+          "type": "string"
+        },
+        "pi_contact": {
+          "description": "Stable contact information",
+          "type": "string"
+        },
+        "subject_species": {
+          "description": "Species",
+          "type": "string"
+        },
+        "subject_sex": {
+          "description": "Sex",
+          "type": "string"
+        },
+        "subjet_age": {
+          "description": "Age",
+          "type": "string"
+        },
+        "subject_race": {
+          "description": "Race/breed",
+          "type": "string"
+        },
+        "subject_genotype": {
+          "description": "Organism genetic information (genotype)",
+          "type": "string"
+        },
+        "subject_health": {
+          "description": "Health status",
+          "type": "string"
+        },
+        "product_intevention": {
+          "description": "Intervention",
+          "type": "string"
+        },
+        "product_dose": {
+          "description": "Dose",
+          "type": "string"
+        },
+        "product_frequency": {
+          "description": "Frequency",
+          "type": "string"
+        },
+        "product_administration": {
+          "description": "Route of administration",
+          "type": "string"
+        },
+        "product_protocol": {
+          "description": "Administration protocol",
+          "type": "string"
+        },
+        "product_cell_type": {
+          "description": "Cell product type",
+          "type": "string"
+        },
+        "product_cell_count": {
+          "description": "Cell count",
+          "type": "string"
+        },
+        "product_component": {
+          "description": "Product component",
+          "type": "string"
+        },
+        "product_component_description": {
+          "description": "Component description",
+          "type": "string"
+        },
+        "donor_species": {
+          "description": "Donor organism",
+          "type": "string"
+        },
+        "donor_gender": {
+          "description": "Gender",
+          "type": "string"
+        },
+        "donor_age": {
+          "description": "Age when source cells was obtained",
+          "type": "string"
+        },
+        "donor_race": {
+          "description": "Race",
+          "type": "string"
+        },
+        "donor_genotype": {
+          "description": "Organism genetic information (genotype)",
+          "type": "string"
+        },
+        "donor_health": {
+          "description": "Health/disease status when source cells were obtained",
+          "type": "string"
+        },
+        "source_cell_organ": {
+          "description": "Source organ",
+          "type": "string"
+        },
+        "source_cell_tissue": {
+          "description": "Source tissue",
+          "type": "string"
+        },
+        "source_cell_detail": {
+          "description": "Anatomical location (most detailed)",
+          "type": "string"
+        },
+        "source_cell_type": {
+          "description": "Source cell type",
+          "type": "string"
+        },
+        "source_cell_description": {
+          "description": "Source cell description",
+          "type": "string"
+        },
+        "source_cell_compatability": {
+          "description": "Autologous/allogenic",
+          "type": "string"
+        },
+        "source_cell_origin": {
+          "description": "Organ/tissue of origin of source cell",
+          "type": "string"
+        },
+        "source_cell_testing": {
+          "description": "Laboratory testing of source cell",
+          "type": "string"
+        },
+        "source_cell_lineage": {
+          "description": "Cell lineage",
+          "type": "string"
+        },
+        "source_cell_karyotype": {
+          "description": "Source cell karyotype",
+          "type": "string"
+        },
+        "source_cell_cell_bank": {
+          "description": "Source cell providing institution (master cell bank)",
+          "type": "string"
+        },
+        "source_cell_cell_bank_contact": {
+          "description": "Source cell providing institution contact information",
+          "type": "string"
+        },
+        "stem_cell_culture_temp": {
+          "description": "Culture temperature",
+          "type": "string"
+        },
+        "stem_cell_o2_conc": {
+          "description": "% O2 concentration in air",
+          "type": "string"
+        },
+        "stem_cell_co2_conc": {
+          "description": "% CO2 concentration in air",
+          "type": "string"
+        },
+        "stem_cell_media": {
+          "description": "Culture media",
+          "type": "string"
+        },
+        "stem_cell_passage": {
+          "description": "Passage protocol",
+          "type": "string"
+        },
+        "stem_cell_reprogramming": {
+          "description": "Reprogramming type",
+          "type": "string"
+        },
+        "stem_cell_transgene": {
+          "description": "Transgene type",
+          "type": "string"
+        },
+        "stem_cell_vector": {
+          "description": "Vector type",
+          "type": "string"
+        },
+        "stem_cell_virus": {
+          "description": "Virus vector type",
+          "type": "string"
+        },
+        "stem_cell_protocol": {
+          "description": "Reprogramming protocol",
+          "type": "string"
+        },
+        "stem_cell_differentiation_ability": {
+          "description": "Differentiation ability in vitro",
+          "type": "string"
+        },
+        "stem_cell_differentiation_propensity": {
+          "description": "Differentiation propensity",
+          "type": "string"
+        },
+        "stem_cell_tumorigenesis": {
+          "description": "Tumorigenesis",
+          "type": "string"
+        },
+        "stem_cell_stability": {
+          "description": "Genomic stability",
+          "type": "string"
+        },
+        "stem_cell_morphology": {
+          "description": "Morphology",
+          "type": "string"
+        },
+        "stem_cell_image": {
+          "description": "Cell image",
+          "type": "string"
+        },
+        "stem_cell_purity": {
+          "description": "Cell population purity",
+          "type": "string"
+        },
+        "stem_cell_marker_expression": {
+          "description": "Marker gene expression",
+          "type": "string"
+        },
+        "stem_cell_antigen": {
+          "description": "Surface antigen expression",
+          "type": "string"
+        },
+        "stem_cell_karyotyping": {
+          "description": "Karyotyping and used method",
+          "type": "string"
+        },
+        "stem_cell_cnv": {
+          "description": "Copy number variation (CNV)",
+          "type": "string"
+        },
+        "stem_cell_snps": {
+          "description": "Single nucleotide polymorphisms (SNPs)",
+          "type": "string"
+        },
+        "stem_cell_exogene": {
+          "description": "Residual exogene detection",
+          "type": "string"
+        },
+        "stem_cell_genome": {
+          "description": "Genome profiling",
+          "type": "string"
+        },
+        "stem_cell_transcriptome": {
+          "description": "Transcriptome profiling",
+          "type": "string"
+        },
+        "stem_cell_epigenome": {
+          "description": "Epigenome profiling",
+          "type": "string"
+        },
+        "stem_cell_proteome": {
+          "description": "Proteome/PTM profiling",
+          "type": "string"
+        },
+        "stem_cell_metabolome": {
+          "description": "Metabolome/respirome profiling",
+          "type": "string"
+        },
+        "stem_cell_bacteria": {
+          "description": "Bacterial contamination (sterility test)",
+          "type": "string"
+        },
+        "stem_cell_fungi": {
+          "description": "Fungal contamination (sterility test)",
+          "type": "string"
+        },
+        "stem_cell_mycoplasma": {
+          "description": "Mycoplasma contamination",
+          "type": "string"
+        },
+        "stem_cell_protozoa": {
+          "description": "Protozoal contamination",
+          "type": "string"
+        },
+        "stem_cell_viral": {
+          "description": "Viral contamination",
+          "type": "string"
+        },
+        "stem_cell_sterility": {
+          "description": "Other sterility test",
+          "type": "string"
+        },
+        "product_cell_treatment": {
+          "description": "Sample cell treatment type",
+          "type": "string"
+        },
+        "product_cell_treatment_name": {
+          "description": "Sample cell treatment name",
+          "type": "string"
+        },
+        "product_cell_treatment_protocol": {
+          "description": "Sample treatment protocol",
+          "type": "string"
+        },
+        "product_cell_identification": {
+          "description": "Sample cell identification method",
+          "type": "string"
+        },
+        "product_cell_preparation": {
+          "description": "Sample preparation method",
+          "type": "string"
+        },
+        "product_cell_preparation_protocol": {
+          "description": "Sample preparation protocol",
+          "type": "string"
+        },
+        "product_cell_assay": {
+          "description": "Assay ID",
+          "type": "string"
+        },
+        "product_cell_experimental_technology": {
+          "description": "Experimental technology",
+          "type": "string"
+        },
+        "product_cell_sample_material": {
+          "description": "Sample material",
+          "type": "string"
+        },
+        "product_cell_library_method": {
+          "description": "Library preparation method",
+          "type": "string"
+        },
+        "product_cell_library_type": {
+          "description": "Library type (selection)",
+          "type": "string"
+        },
+        "product_cell_library_input": {
+          "description": "Sample material input amount",
+          "type": "string"
+        },
+        "product_cell_array_size": {
+          "description": "Array size (surface area)",
+          "type": "string"
+        },
+        "product_cell_reporter_probe": {
+          "description": "Reporter (probe) type",
+          "type": "string"
+        },
+        "product_cell_labeling": {
+          "description": "Labeling material",
+          "type": "string"
+        },
+        "product_cell_labeling_method": {
+          "description": "Labeling method",
+          "type": "string"
+        },
+        "product_cell_hybridization": {
+          "description": "Hybridization assay name",
+          "type": "string"
+        },
+        "product_cell_array_design": {
+          "description": "Array design ref",
+          "type": "string"
+        },
+        "product_cell_primer": {
+          "description": "Primer selection",
+          "type": "string"
+        },
+        "product_cell_reverse_transcriptase": {
+          "description": "Reverse transcriptase and conditions (kit name if used)",
+          "type": "string"
+        },
+        "product_cell_reverse_transcription_conditions": {
+          "description": "Reverse transcription reaction time and temperature",
+          "type": "string"
+        },
+        "product_cell_qpcr_target": {
+          "description": "qPCR target (gene symbol, gene ID)",
+          "type": "string"
+        },
+        "product_cell_labeling_marker": {
+          "description": "Labeling marker type",
+          "type": "string"
+        },
+        "product_cell_labeling_marker_name": {
+          "description": "Labeling marker name",
+          "type": "string"
+        },
+        "product_cell_vendor_name": {
+          "description": "Vendor name of marker",
+          "type": "string"
+        },
+        "product_cell_catalog_number": {
+          "description": "Catalog no.",
+          "type": "string"
+        },
+        "product_cell_component_identified": {
+          "description": "Cellular component identified",
+          "type": "string"
+        },
+        "product_cell_molecule_identified": {
+          "description": "Molecule identified",
+          "type": "string"
+        },
+        "product_cell_detection": {
+          "description": "Detection technology type",
+          "type": "string"
+        },
+        "product_cell_instrument": {
+          "description": "Instrument type",
+          "type": "string"
+        },
+        "product_cell_detection_protocol": {
+          "description": "Experimental protocol description",
+          "type": "string"
+        },
+        "product_cell_measurement_uncertainty": {
+          "description": "Measurement uncertainty",
+          "type": "string"
+        },
+        "data_assay_id": {
+          "description": "Assay ID",
+          "type": "string"
+        },
+        "ddata_id": {
+          "description": "Data ID",
+          "type": "string"
+        },
+        "data_type": {
+          "description": "Data type",
+          "type": "string"
+        },
+        "data_format": {
+          "description": "Data file format",
+          "type": "string"
+        },
+        "data_location": {
+          "description": "Raw data/processed data",
+          "type": "string"
+        },
+        "data_processing": {
+          "description": "Data processing method",
+          "type": "string"
+        },
+        "data_processing_software": {
+          "description": "Data processing software name, version",
+          "type": "string"
+        },
+        "data_normalization": {
+          "description": "Data normalization method",
+          "type": "string"
+        },
+        "data_normalization_software": {
+          "description": "Data normalization software name, version",
+          "type": "string"
+        },
+        "data_analysis": {
+          "description": "Analytical software name, version",
+          "type": "string"
+        },
+        "data_genome": {
+          "description": "Genome annotation resource (name of database)",
+          "type": "string"
+        },
+        "data_mapping": {
+          "description": "Mapping software name, version",
+          "type": "string"
+        },
+        "data_analytics": {
+          "description": "Analytical software name, version",
+          "type": "string"
+        },
+        "data_reference": {
+          "description": "Reference sequence source",
+          "type": "string"
+        },
+        "data_annotation": {
+          "description": "Genome annotation resource (name of database)",
+          "type": "string"
+        }
+      },
+      "required": [
+        "project_id"
+      ]
+    }
+  ]
+}
