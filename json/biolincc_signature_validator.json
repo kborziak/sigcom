@@ -1,5 +1,5 @@
 {
-  "$id": "biolincc_signature_validator.json",
+  "$id": "https://github.com/kborziak/sigcom/blob/master/json/biolincc_signature_validator.json",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "allOf": [
     {
