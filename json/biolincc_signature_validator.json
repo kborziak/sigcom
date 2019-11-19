@@ -51,7 +51,7 @@
       "required": [
         "MASKID",
         "TREATMENT_ASSIGNMENT",
-        "$validator",
+        "$validator"
       ],
       "type": "object"
     }
