@@ -1,5 +1,5 @@
 {
-  "$id": "https://github.com/kborziak/sigcom/blob/master/json/biolincc_signature_validator.json",
+  "$id": "https://github.com/kborziak/sigcom/blob/master/json/biolincc_signature_validator3.json",
   "$schema": "http://json-schema.org/draft-04/schema#",
   "allOf": [
     {
@@ -7,11 +7,11 @@
     },
     {
       "properties": {
-        "MASKID": {
+        "Masked_ID": {
           "description": "Masked Patient ID",
           "type": "number"
         },
-        "TREATMENT_ASSIGNMENT": {
+        "Randomization_Group": {
           "description": "Randomization Group",
           "type": "string"
         },
@@ -49,8 +49,8 @@
         }
       },
       "required": [
-        "MASKID",
-        "TREATMENT_ASSIGNMENT",
+        "Masked_ID",
+        "Randomization_Group",
         "$validator"
       ],
       "type": "object"
