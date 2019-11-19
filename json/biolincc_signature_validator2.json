@@ -1,0 +1,59 @@
+{
+  "$id": "https://github.com/kborziak/sigcom/blob/master/json/biolincc_signature_validator.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "allOf": [
+    {
+      "$ref": "/dcic/signature-commons-schema/v5/core/meta.json"
+    },
+    {
+      "properties": {
+        "MASKID": {
+          "description": "Masked Patient ID",
+          "type": "number"
+        },
+        "TREATMENT_ASSIGNMENT": {
+          "description": "Randomization Group",
+          "type": "string"
+        },
+        "Direction": {
+          "description": "Tells whether the data are up regulated or down regulated",
+          "enum": [
+            "up",
+            "down"
+          ],
+          "type": "string"
+        },
+        "Tissue": {
+          "description": "The tissue context",
+          "items": {
+            "properties": {
+              "Accession": {
+                "description": "Ontology accession",
+                "type": "string"
+              },
+              "Name": {
+                "description": "Name of the tissue",
+                "type": "string"
+              }
+            },
+            "required": [
+              "Name"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        },
+        "Virus": {
+          "$ref": "/dcic/signature-commons-schema/v5/meta/signature/perturbation/disease.json",
+          "description": "Virus perturbations TODO: Merge with disease perturbations"
+        }
+      },
+      "required": [
+        "MASKID",
+        "TREATMENT_ASSIGNMENT",
+        "$validator"
+      ],
+      "type": "object"
+    }
+  ]
+}
