@@ -9,7 +9,7 @@
       "properties": {
         "Project_ID": {
           "description": "NIH Project ID",
-          "type": "number"
+          "type": "string"
         },
         "PI_Name": {
           "description": "PI Name",
