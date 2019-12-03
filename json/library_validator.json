@@ -1,0 +1,22 @@
+{
+  "$id": "https://raw.githubusercontent.com/kborziak/sigcom/master/json/library_validator.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "allOf": [
+    {
+      "$ref": "/dcic/signature-commons-schema/v5/core/meta.json"
+    },
+    {
+      "properties": {
+        "Library_Name": {
+          "description": "The name of the library",
+          "type": "string"
+        }
+      },
+      "required": [
+        "$validator",
+        "Library_name"
+      ],
+      "type": "object"
+    }
+  ]
+}
