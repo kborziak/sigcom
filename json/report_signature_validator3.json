@@ -1,0 +1,25 @@
+{
+  "$id": "https://raw.githubusercontent.com/kborziak/sigcom/master/json/report_signature_validator3.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "allOf": [
+    {
+      "$ref": "/dcic/signature-commons-schema/v5/core/meta.json"
+    },
+    {
+      "properties": {
+        "Project_ID": {
+          "description": "NIH Project ID",
+          "type": "string"
+        },
+        "PI_Name": {
+          "description": "PI Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "$validator"
+      ],
+      "type": "object"
+    }
+  ]
+}
