@@ -21,7 +21,7 @@
             "properties": {
               "Protein_name": {
                 "description": "UniProt protein name",
-          "$ref": "https://github.com/anas-elghafari/validatorsForSigCom/blob/master/uniProtValidaror.ts"
+          "$ref": "https://raw.githubusercontent.com/anas-elghafari/validatorsForSigCom/blob/master/uniProtValidaror.ts"
               },
               "Protein_abundance": {
                 "description": "Protein marker abundance (ppm)",
