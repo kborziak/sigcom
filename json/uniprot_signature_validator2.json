@@ -17,7 +17,7 @@
         },
               "Protein_name": {
                 "description": "UniProt protein name",
-          "$ref": "https://raw.githubusercontent.com/anas-elghafari/validatorsForSigCom/master/uniProtValidaror.ts"
+          "$validator": "https://raw.githubusercontent.com/anas-elghafari/validatorsForSigCom/master/uniProtValidaror.ts"
               }
       },
       "required": [
