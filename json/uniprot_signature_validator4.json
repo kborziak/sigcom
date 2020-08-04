@@ -1,0 +1,25 @@
+{
+    "$id": "https://github.com/kborziak/sigcom/blob/master/json/uniprot_signature_validator4.json",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "allOf": [{
+            "$ref": "/dcic/signature-commons-schema/v5/core/meta.json"
+        }, {
+            "properties": {
+                "Project_ID": {
+                    "description": "NIH Project ID",
+                    "type": "string"
+                },
+                "Protein_name": {
+                    "$validator": "https://raw.githubusercontent.com/anas-elghafari/validatorsForSigCom/master/uniProtValidaror.ts",
+                    "description": "UniProt protein name"
+                },
+                "Subject_ID": {
+                    "description": "Masked Subject ID",
+                    "type": "string"
+                }
+            },
+            "required": ["Protein_name", "$validator"],
+            "type": "object"
+        }
+    ]
+}
