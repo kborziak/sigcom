@@ -1,0 +1,39 @@
+{
+    "$id": "https://raw.githubusercontent.com/kborziak/sigcom/master/json/uniprot_signature_validator_multi2.json",
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "allOf": [{
+            "$ref": "/dcic/signature-commons-schema/v5/core/meta.json"
+        }, {
+            "properties": {
+                "Subject_ID": {
+                    "description": "Masked Subject ID",
+                    "type": "string"
+                },
+                "Project_ID": {
+                    "description": "NIH Project ID",
+                    "type": "string"
+                },
+                "Protein_markers": {
+                    "description": "Critical protein markers/ characteristics of cell product",
+                    "items": {
+                        "properties": {
+                            "Protein_name": {
+                                "description": "UniProt protein name",
+                                "$validator": "https://raw.githubusercontent.com/personalized-health-informatics-lab/sample_validator/master/dist/uniprot.umd.js"
+                            },
+                            "Protein_abundance": {
+                                "description": "Protein marker abundance (ppm)",
+                                "type": "number"
+                            }
+                        },
+                        "required": ["Protein_name", "Protein_abundance"],
+                        "type": "object"
+                    },
+                    "type": "array"
+                }
+            },
+            "required": ["Subject_ID", "Project_ID", "Protein_markers", "$validator"],
+            "type": "object"
+        }
+    ]
+}
