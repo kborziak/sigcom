@@ -1,0 +1,18 @@
+{
+  "$id": "https://github.com/kborziak/sigcom/blob/master/json/basic.json",
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "allOf": [
+    {
+      "$ref": "/dcic/signature-commons-schema/v5/core/meta.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "Project ID": {
+          "description": "Pubmed ID",
+          "type": "string"
+        }
+      }
+    }
+  ]
+}
